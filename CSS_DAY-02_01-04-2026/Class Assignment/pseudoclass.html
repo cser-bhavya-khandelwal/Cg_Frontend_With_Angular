@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pseudo Class Selector</title>
+
+    <style>
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: green;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+
+        p:first-child {
+            background-color: red;
+        }
+
+        p:last-child {
+            background-color: lightgreen;
+        }
+
+
+        li:nth-child(odd) {
+            background-color:magenta;
+        }
+
+         p::first-letter {
+            font-size: 30px;
+        }
+         p::first-letter {
+            font-size: 30px;
+        }
+
+        h2::before {
+            content: "@@ ";
+        }
+        h2::after {
+            content: " ## ";
+        }
+    </style>
+
+</head>
+<body>
+
+<h2>Pseudo Class Selector</h2>
+
+<a href="#">Click karo idhar </a>
+
+<div>
+    <p>First paragraph (first-child)</p>
+    <p>Middle paragraph</p>
+    <p>Last paragraph (last-child)</p>
+</div>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2 (nth-child)</li>
+    <li>Item 3</li>
+</ul>
+
+</body>
+</html>

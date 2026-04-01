@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Combinators</title>
+
+    <style>
+        div p {
+            background-color: yellow;
+        }
+
+        div > span {
+            background-color: lightblue;
+        }
+
+        h2 + p {
+            background-color: lightgreen;
+        }
+
+        h3 ~ p {
+            background-color: lightcoral;
+        }
+    </style>
+
+</head>
+<body>
+
+<h2>Heading 2</h2>
+<p>Adjacent Sibling</p>
+<h3>Heading 3</h3>
+<p>General Sibling</p>
+<p>General Sibling</p>
+<div>
+    <p>Descendant</p>
+    <span>Child</span>
+</div>
+
+</body>
+</html>
